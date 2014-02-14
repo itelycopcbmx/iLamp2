@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+	<html>
+	<body>
+	
+
+	<script type="text/javascript">
+
+	function Off_iLamp()
+	{
+		var req = new XMLHttpRequest();
+		 req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=1", true);
+		 req.send(null);
+	}
+	 function On_iLamp()
+	 {
+		var req = new XMLHttpRequest();
+		 req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=0", true);
+		 req.send(null);
+	 }
+
+	  function Flick_Slowly()
+	  {
+		var req = new XMLHttpRequest();
+		 req.open('GET',"https://agent.electricimp.com/HC5-CYm8jmnW?led=2", true);
+		  req.send(null);
+	  }
+
+	   function Flick_Faster()
+	   {
+		var req = new XMLHttpRequest();
+		 req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=3", true);
+		 req.send(null);
+		 	   }
+
+	</script> 
+
+	<center>
+	
+	<link rel="stylesheet" type="text/css" href="wraptocenter.css" media="screen" />
+	<p></p>
+	<INPUT TYPE=BUTTON OnClick=" Off_iLamp(); "VALUE=" Off iLamp" CLASS="wraptocenter1">
+	<p></p>
+	<INPUT TYPE=BUTTON OnClick=" On_iLamp (); "VALUE=" On iLamp" CLASS="wraptocenter2">
+	<p></p>
+	<INPUT TYPE=BUTTON OnClick=" Flick_Slowly();"VALUE=" Flick Slowly" CLASS="wraptocenter3">
+	<p></p>
+	<INPUT TYPE=BUTTON  OnClick=" Flick_Faster();"VALUE=" Flick Faster" CLASS="wraptocenter4">
+	
+	</body>
+	</html>
